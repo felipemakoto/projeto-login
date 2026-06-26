@@ -10,16 +10,25 @@
     <main>
         <section class="login">
             <article class="imagem">
-
+                <!-- Imagem -->
             </article>
             <article class="form">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
                 
                 <form action="login.php" method="post">
-                    <input type="text" name="" id="">
-                    <input type="password" name="" id="">
-                    <input type="submit" value="">
+                    
+                    <div class="formInput">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                    
+                    <div class="formInput">
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="senha" id="senha">
+                    </div>
+
+                    <input type="submit" value="enviar">
                 </form>
             </article>
         </section>
