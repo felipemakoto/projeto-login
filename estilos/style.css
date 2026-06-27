@@ -65,7 +65,67 @@ main{
     display: block;
 }
 
+.form h1{
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.form p{
+    font-size: 0.9em;
+}
+
 /* Input Divs */
+
+form{
+    margin-top: 15px;
+}
+
+label{
+    position: absolute;
+    top: 0;
+    left: 30px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+input{
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    border-bottom: 1px solid rgb(5, 90, 74);
+    width: 200px;
+    outline: none;
+   
+}
+
+input:focus ~ label, input:valid ~ label{
+    font-size: 12px;
+    top: -10px;
+    color: #49a09d;
+}
+
+input:focus{
+    box-shadow: 0 2px 4px -2px #49a09d;
+}
+
+.formInput{
+    position: relative;
+    margin-top: 15px;
+}
+
+.enviar{
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--corVerdeAgua);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
 
 
 

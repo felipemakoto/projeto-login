@@ -6,6 +6,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
 </head>
 <body>
     <main>
@@ -19,17 +20,24 @@
                 
                 <form action="login.php" method="post">
                     
+                    
                     <div class="formInput">
-                        <label for="nome">Nome Completo:</label>
-                        <input type="text" name="nome" id="nome">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="text" name="email" id="email" required maxlength="30" autocomplete="email">
+                        <label for="email">E-mail</label>
                     </div>
                     
                     <div class="formInput">
+                        <span class="material-symbols-outlined">key</span>
+                        <input type="password" name="senha" id="senha" required minlength="5"
+                        maxlength="20" autocomplete="new-password current-password">
                         <label for="senha">Senha:</label>
-                        <input type="password" name="senha" id="senha">
                     </div>
 
-                    <input type="submit" value="enviar">
+                    <div class="formInput">
+                        <input type="submit" value="enviar" class="enviar">
+                        <a href="#" class="forgotPassword">Esqueci a senha</a>
+                    </div>
                 </form>
             </article>
         </section>
